@@ -7,14 +7,14 @@
 
 ## Index and Languages / Índice e Línguas
 
-* [English](##LibreBank-Project)  
-  * [How To Compile and Execute](###How-to-Compile-and-Execute)
-  * [Task List](###Task-List)
-  * [Participants](##Participants)
-* [Português](##Projeto-LibreBank)
-  * [Como Compilar e Executar](###Como-compilar-e-executar)
-  * [Lista de Tarefas](###Lista-de-Tarefas)
-  * [Participantes](##Participantes)
+* [English](##-LibreBank-Project)  
+  * [How To Compile and Execute](###-How-to-Compile-and-Execute)
+  * [Task List](###-Task-List)
+  * [Participants](##-Participants)
+* [Português](##-Projeto-LibreBank)
+  * [Como Compilar e Executar](###-Como-compilar-e-executar)
+  * [Lista de Tarefas](###-Lista-de-Tarefas)
+  * [Participantes](##-Participantes)
 
 ## LibreBank Project
 
