@@ -13,12 +13,18 @@
 
 #define CHAR_MAX 75
 
+#define VALOR_DOLAR 0.19
+#define VALOR_EURO 0.16
+#define VALOR_BITCOIN 0.0000042
+
 typedef struct Conta{
   char cpf[CHAR_MAX];
   char nome[CHAR_MAX];
   char email[CHAR_MAX];
   float saldo;
-  
+  float saldoEmDolar;
+  float saldoEmEuro;
+  float saldoEmBitcoin;
 } conta;
 
 conta contaPrincipal;
@@ -26,10 +32,10 @@ conta contaPrincipal;
 void sair(){ //FECHA O CODIGO
   int i;
   for (i = 4; i >=0; i--){
-    system("clear");
     printf("Saindo...");
-      sleep(1);
     printf("TIMER: %d\n", i);
+    sleep(1);
+    system("clear");
   }
 
 }
@@ -48,8 +54,7 @@ void tratamentoDeErro(){ //TRATA DIGITOS ERRADOS
 /* Remove o \n no fim de uma String 
  * string - A string para remover o \n
 */
-void removerNovaLinhaDoFim(char string[])
-{
+void removerNovaLinhaDoFim(char string[]){
   if (string[strlen(string) - 1] == '\n')
     string[strlen(string) - 1] = '\0';
 }
@@ -85,7 +90,7 @@ void Conversor(){
     printf("Digite o valor em dolares a ser trocado para reais: R$ ");
     scanf("%f", &valor1);
     setbuf(stdin, NULL);
-    valor2 = 5.23 * valor1;
+    valor2 = VALOR_DOLAR * valor1;
     printf("Valor total convertido para reais: R$%.2f\n", valor2);
     break;
 
@@ -93,7 +98,7 @@ void Conversor(){
     printf("Digite o valor em euros a ser trocado para reais: R$ ");
     scanf("%f", &valor1);
     setbuf(stdin, NULL);
-    valor2 = 6.15 * valor1;
+    valor2 = VALOR_EURO * valor1;
     printf("Valor total convertido para reais: R$%.2f\n", valor2);
     break;
 
@@ -101,7 +106,7 @@ void Conversor(){
     printf("Digite o valor em euros a ser trocado para reais: R$ ");
     scanf("&%f", &valor1);
     setbuf(stdin, NULL);
-    valor2 = 237566.97 * valor1;
+    valor2 = VALOR_BITCOIN * valor1;
     printf("Valor total convertido para reais: R$%.2f\n", valor2);
     break;
     
@@ -111,18 +116,28 @@ void Conversor(){
 }while(0);
 }
 
+// Converte o saldo atual nas moedas disponiveis
+void converterSaldoParaOutrasMoedas()
+{
+  contaPrincipal.saldoEmDolar = contaPrincipal.saldo * VALOR_DOLAR;
+
+  contaPrincipal.saldoEmEuro = contaPrincipal.saldo * VALOR_EURO;
+    
+  contaPrincipal.saldoEmBitcoin = contaPrincipal.saldo * VALOR_BITCOIN;
+}
+
 /* Executa um saque em determinada conta
  *
  * quantidadeDoSaque - A quantidade a ser sacada
 */
-void executarSaque(float quantidadeDoSaque)
-{
+void executarSaque(float quantidadeDoSaque){
   contaPrincipal.saldo -= quantidadeDoSaque;
+
+  converterSaldoParaOutrasMoedas();
 }
 
 // Pergunta para o usuario uma quantidade e executa saque
-void sacar()
-{
+void sacar(){
   float quantidadeParaSaque;
 
   printf("Digite a quantidade a depositar: ");
@@ -130,6 +145,8 @@ void sacar()
   getchar();
 
   executarSaque(quantidadeParaSaque);
+
+  converterSaldoParaOutrasMoedas();
 }
 
 /* Executa um deposito em determinada conta
@@ -141,8 +158,7 @@ void executarDeposito(float quantidadeDoDeposito){
 }
 
 // Pergunta para o usuario uma quantidade e executa o deposito
-void depositar()
-{
+void depositar(){
   float quantidadeParaDeposito;
 
   printf("Digite a quantidade a depositar: ");
@@ -150,18 +166,22 @@ void depositar()
   setbuf(stdin, NULL);
 
   executarDeposito(quantidadeParaDeposito);
+
+  converterSaldoParaOutrasMoedas();
 }
 
 // Mostra os dados da conta cadastradas
-void mostrarDadosDaConta()
-{
+void mostrarDadosDaConta(){
   printf("-\t-\t-\n");
-  printf("Dados da conta\n");
+  printf("Dados da conta:\n");
   printf("-\t-\t-\n");
   printf("CPF: %s\n", contaPrincipal.cpf);
   printf("Nome: %s\n", contaPrincipal.nome);
   printf("Email: %s\n", contaPrincipal.email);
-  printf("Saldo: %.2f\n", contaPrincipal.saldo);
+  printf("Saldo em reais (BRL): R$ %.2f\n", contaPrincipal.saldo);
+  printf("Saldo em dolares (USD): $ %.2f\n", contaPrincipal.saldoEmDolar);
+  printf("Saldo em euros (EUR): € %.2f\n", contaPrincipal.saldoEmEuro);
+  printf("Saldo em bitcoins (BTC): ₿ %.7f\n", contaPrincipal.saldoEmBitcoin);
   printf("-\t-\t-\n");
 }
 
@@ -182,6 +202,8 @@ void perguntasIniciais(){
     printf("Digite seu saldo: ");
     scanf("%f", &contaPrincipal.saldo);
     getchar();
+
+    converterSaldoParaOutrasMoedas();
     
     system("clear");
 }
