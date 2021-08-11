@@ -1,8 +1,8 @@
-/* [1] - Registrar nova conta"
-  "[2] - Acessar conta"
-  "[3] - Efetuar depósito"
-  "[4] - Efetuar saque"
-  "[5] - Conversor de moedas
+/* [1] - Registrar nova conta
+   [2] - Acessar conta
+   [3] - Efetuar depósito
+   [4] - Efetuar saque
+   [5] - Conversor de moedas
 */
 
 
