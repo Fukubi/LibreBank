@@ -12,15 +12,15 @@
   * [Task List](###Task-List)
   * [Participants](##Participants)
 * [Português](##Projeto-LibreBank)
- * [Como Compilar e Executar](###Como-compilar-e-executar)
- * [Lista de Tarefas](###Lista-de-Tarefas)
- * [Participantes](##Participantes)
+  * [Como Compilar e Executar](###Como-compilar-e-executar)
+  * [Lista de Tarefas](###Lista-de-Tarefas)
+  * [Participantes](##Participantes)
 
 ## LibreBank Project
 
 The LibreBank project is a bank simulator that was made with the objective of practice and learn how to use the C Language.
 
-![Main Screen]()
+![Main Screen](https://raw.githubusercontent.com/Fukubi/LibreBank/main/DEMO/tela_principal.PNG)
 
 ### How to Compile and Execute
 
@@ -51,7 +51,7 @@ The LibreBank project is a bank simulator that was made with the objective of pr
 
 O projeto LibreBank é um simulador de banco feito com o objetivo de praticar e aprender a utilizar a linguagem de programação C.
 
-![Tela Inicial]()
+![Tela Inicial](https://raw.githubusercontent.com/Fukubi/LibreBank/main/DEMO/tela_principal.PNG)
 
 ### Como compilar e executar
 
