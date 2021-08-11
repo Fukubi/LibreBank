@@ -1,10 +1,10 @@
 # LibreBank
 
 <p align=center>
- <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Fukubi/LibreBank">
- <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Fukubi/LibreBank">
- <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Fukubi/LibreBank">
- <img alt="GitHub Version" src="https://img.shields.io/badge/Version-0.0.1-blue">
+ <a href="#"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Fukubi/LibreBank"></a>
+ <a href="#"><img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Fukubi/LibreBank"></a>
+ <a href="#"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Fukubi/LibreBank"></a>
+ <a href="#"><img alt="GitHub Version" src="https://img.shields.io/badge/Version-0.0.1-blue"></a>
 </p>
 
 ## Index and Languages / Índice e Línguas
@@ -22,7 +22,7 @@
 
 The LibreBank project is a bank simulator that was made with the objective of practice and learn how to use the C Language.
 
-![Main Screen](https://raw.githubusercontent.com/Fukubi/LibreBank/main/DEMO/tela_principal.PNG)
+[![Main Screen](https://raw.githubusercontent.com/Fukubi/LibreBank/main/DEMO/tela_principal.PNG)](#)
 
 ### How to Compile and Execute
 
@@ -53,7 +53,7 @@ The LibreBank project is a bank simulator that was made with the objective of pr
 
 O projeto LibreBank é um simulador de banco feito com o objetivo de praticar e aprender a utilizar a linguagem de programação C.
 
-![Tela Inicial](https://raw.githubusercontent.com/Fukubi/LibreBank/main/DEMO/tela_principal.PNG)
+[![Tela Inicial](https://raw.githubusercontent.com/Fukubi/LibreBank/main/DEMO/tela_principal.PNG)](#)
 
 ### Como compilar e executar
 
