@@ -1,9 +1,11 @@
 # LibreBank
 
-![GitHub top language](https://img.shields.io/github/languages/top/Fukubi/LibreBank)
-![Lines of code](https://img.shields.io/tokei/lines/github/Fukubi/LibreBank)
-![GitHub repo size](https://img.shields.io/github/repo-size/Fukubi/LibreBank)
-![GitHub Version](https://img.shields.io/badge/Version-0.0.1-blue)
+<p align=center>
+ <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Fukubi/LibreBank">
+ <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Fukubi/LibreBank">
+ <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Fukubi/LibreBank">
+ <img alt="GitHub Version" src="https://img.shields.io/badge/Version-0.0.1-blue">
+</p>
 
 ## Index and Languages / Índice e Línguas
 
