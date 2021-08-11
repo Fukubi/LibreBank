@@ -11,16 +11,22 @@
 #include <unistd.h>
 #include <string.h>
 
-#define CHAR_MAX 75
+#define STRING_MAX_SIZE 75
+
+#if _WIN32
+  #define CLEAR "cls"
+#elif __linux__
+  #define CLEAR "clear"
+#endif
 
 #define VALOR_DOLAR 0.19
 #define VALOR_EURO 0.16
 #define VALOR_BITCOIN 0.0000042
 
 typedef struct Conta{
-  char cpf[CHAR_MAX];
-  char nome[CHAR_MAX];
-  char email[CHAR_MAX];
+  char cpf[STRING_MAX_SIZE];
+  char nome[STRING_MAX_SIZE];
+  char email[STRING_MAX_SIZE];
   float saldo;
   float saldoEmDolar;
   float saldoEmEuro;
@@ -35,7 +41,7 @@ void sair(){ //FECHA O CODIGO
     printf("Saindo...");
     printf("TIMER: %d\n", i);
     sleep(1);
-    system("clear");
+    system(CLEAR);
   }
 
 }
@@ -66,7 +72,7 @@ void MenuPrincipal(){
   printf("\033[0;32mBem vindo ao melhor banco da historia: LibreBank\033[0m\n\n");
   printf("[1] - Registrar nova conta\n"
   "[2] - Acessar conta\n"
-  "[3] - Efetuar depósito\n"
+  "[3] - Efetuar deposito\n"
   "[4] - Efetuar saque\n"
   "[5] - Conversor de moedas\n"
   "[0] - Sair\n\n"
@@ -188,15 +194,15 @@ void mostrarDadosDaConta(){
 // Pergunta para o usuario as informacoes da nova conta e salva ela na struct
 void perguntasIniciais(){
     printf("Digite o seu nome: ");
-    fgets(contaPrincipal.nome, CHAR_MAX, stdin );
+    fgets(contaPrincipal.nome, STRING_MAX_SIZE, stdin );
     removerNovaLinhaDoFim(contaPrincipal.nome);
 
     printf("Digite o seu cpf: ");
-    fgets(contaPrincipal.cpf, CHAR_MAX, stdin);
+    fgets(contaPrincipal.cpf, STRING_MAX_SIZE, stdin);
     removerNovaLinhaDoFim(contaPrincipal.cpf);
 
     printf("Digite seu email: ");
-    fgets(contaPrincipal.email, CHAR_MAX, stdin);
+    fgets(contaPrincipal.email, STRING_MAX_SIZE, stdin);
     removerNovaLinhaDoFim(contaPrincipal.email);
 
     printf("Digite seu saldo: ");
@@ -205,7 +211,7 @@ void perguntasIniciais(){
 
     converterSaldoParaOutrasMoedas();
     
-    system("clear");
+    system(CLEAR);
 }
 
 int main(void) {
@@ -215,7 +221,7 @@ int main(void) {
     MenuPrincipal();
     scanf("%d", &opcao);
     setbuf(stdin, NULL);
-    system("clear");
+    system(CLEAR);
     switch(opcao){
       case 1:
         perguntasIniciais();
