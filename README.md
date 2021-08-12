@@ -45,7 +45,7 @@ The LibreBank project is a bank simulator that was made with the objective of pr
 
 ## Participants
 
-* Gabriel Nobrega
+* [Gabriel Nobrega](https://github.com/NBrcS)
 * [Rodrigo Lanes](https://github.com/rodrigolanesm)
 * [Deivid Gabriel](https://github.com/Fukubi)
 
@@ -76,6 +76,6 @@ O projeto LibreBank é um simulador de banco feito com o objetivo de praticar e 
 
 ## Participantes
 
-* Gabriel Nobrega
+* [Gabriel Nobrega](https://github.com/NBrcS)
 * [Rodrigo Lanes](https://github.com/rodrigolanesm)
 * [Deivid Gabriel](https://github.com/Fukubi)
