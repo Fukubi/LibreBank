@@ -4,7 +4,7 @@
  <a href="#"><img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Fukubi/LibreBank"></a>
  <a href="#"><img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/Fukubi/LibreBank"></a>
  <a href="#"><img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Fukubi/LibreBank"></a>
- <a href="#"><img alt="GitHub Version" src="https://img.shields.io/badge/Version-0.0.1-blue"></a>
+ <a href="#"><img alt="GitHub Version" src="https://img.shields.io/badge/Version-1.0.0-blue"></a>
 </p>
 
 ## Index and Languages / Índice e Línguas
