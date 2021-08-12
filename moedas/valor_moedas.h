@@ -1,0 +1,8 @@
+#ifndef VALOR_MOEDAS_H
+#define VALOR_MOEDAS_H
+
+#define VALOR_DOLAR 0.19
+#define VALOR_EURO 0.16
+#define VALOR_BITCOIN 0.0000042
+
+#endif

@@ -28,20 +28,20 @@ The LibreBank project is a bank simulator that was made with the objective of pr
 
 - Linux  
     Make sure that the C compiler (GCC is the recommended) is installed correctly and execute  
-    ```gcc -o librebank main.c```  
+    ```gcc -o librebank main.c conta/conta.c conversor/conversor.c menu/menu.c moedas/moedas.c programa/programa.c tratamento_de_erro.c user_inf/user_inf.c utils/utils.c```  
 
     After that it will be possible to execute the program using ```./librebank```.
 
 - Windows  
     Install a C compiler (Mingw-w64 is the recommended) and execute  
-    ```gcc -o librebank main.c```
+    ```gcc -o librebank main.c conta/conta.c conversor/conversor.c menu/menu.c moedas/moedas.c programa/programa.c tratamento_de_erro.c user_inf/user_inf.c utils/utils.c```
 
     After this it will be created a executable in the same folder that the command above was executed, you can execute the program using ```.\librebank.exe```.
 ### Task List
 
 - [x] Basic functionalities of the bank.
 - [x] Show the balance in different currencies.
-- [ ] Support for multiple accounts.
+- [x] Support for multiple accounts.
 
 ## Participants
 
@@ -59,20 +59,20 @@ O projeto LibreBank é um simulador de banco feito com o objetivo de praticar e 
 
 - Linux  
     Tenha certeza de que o compilador C está instalado corretamente (GCC é o recomendado) e execute  
-    ```gcc -o librebank main.c```  
+    ```gcc -o librebank main.c conta/conta.c conversor/conversor.c menu/menu.c moedas/moedas.c programa/programa.c tratamento_de_erro.c user_inf/user_inf.c utils/utils.c```  
 
     Após isso será possível executar o programa utilizando ```./librebank```.
 
 - Windows  
     Instale um compilador C (mingw-w64 é o recomendado) e execute  
-    ```gcc -o librebank main.c```
+    ```gcc -o librebank main.c conta/conta.c conversor/conversor.c menu/menu.c moedas/moedas.c programa/programa.c tratamento_de_erro.c user_inf/user_inf.c utils/utils.c```
 
     Após isso será criado um executável na pasta onde esse comando foi executado, você poderá executar o programa utilizando ```.\librebank.exe```.
 ### Lista de Tarefas
 
 - [x] Funcionalidades basicas do banco.
 - [x] Mostrar saldo em diferentes moedas.
-- [ ] Suporte a multiplas contas.
+- [x] Suporte a multiplas contas.
 
 ## Participantes
 
